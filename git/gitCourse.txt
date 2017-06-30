@@ -1,0 +1,62 @@
+Git使用教程：
+下载地址 https://git-scm.com
+安装完成后：首先配置git，
+进入文件夹 git init
+initialize empty git repository
+git config --global user.name "yituxiu"
+git config --global user.email "60zy@163.com"
+
+
+git subcommand
+//git的使用者让直接感觉比想象中的笨
+//普通的程序员是把事件放在写代码和调bug上，优秀的程序员是将更多的精力放在设计上
+//git 三棵时
+Git 四个状态
+  working
+  stage
+  repository(HEAD)
+  push origin master
+Git 文件状态
+  modified  已经改动
+  staged	已经暂存
+  committed 已提交$ git config --list   查看git用户信息
+$ git reset HEAD   从暂存区恢复到工作区  回退一步
+$ git reset HEAD~10  回到上一个快照
+$ git reset --mixed HEAD~ 默认将其指向上一个快照 将HEAD移动后指向快照回滚到暂存区
+$ git reset --soft HEAD~  回到repository  HEAD指向的上一个快照  但不回滚到暂存区
+$ git reset --hard HEAD~  回到repository HEAD 指向的上一个快照同时回滚到暂存区和工作区 
+$ git reset 版本快照
+$ git reset 版本快照 文件名    
+$ git checkout -- file  放弃工作目录的更改   可以作为恢复到上次修改的内容
+$ git diff  快照1  快照2     对比特定连个快照的 difference
+$ git diff  快照            //当前工作内容和快照比较
+$ git diff  HEAD            //最新修改和repository HEAD指针比较
+$ git diff --cached         //默认和暂存区和repository HEAD指针比较
+$ git diff --cached 快照id   //暂存区和快照id比较
+$ git commit  --amend 跳到快照修改页面
+$ git commit  --amend -m "notes"  跳到快照修改页面
+$ git checkout -- README.md       把暂存区的文件复制并覆盖工作区
+$ git rm yellow.jpg			只是删除工作区和暂存区文件
+$ git rm -f yellow.jpg    强制删除 同时删除暂存区和工作区
+$ git rm --cached yellow.jpg  删除缓存区的
+$ git mv  name1  name2     修改文件名字
+$ git reset soft HEAD~
+i键  修改注释
+q 退出
+
+当现实两个冒号时候
+z 表示向下显示一行
+k 想上移动一行
+f 一页一页向下移动
+b 一页一页向上移动
+d 半页半页移动
+u 半页半页移动
+j 跳到第一行
+J 跳到最后一行
+3j 就跳到第3行
+/pring 从上往下搜索  
+?pring 重下往上搜索
+n      跳到下一个
+N      跳到上一个
+q      是退出
+

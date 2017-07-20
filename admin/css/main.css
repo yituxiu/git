@@ -1,0 +1,54 @@
+.nav-search{
+    width:100%;
+    margin-top: 20px;
+}
+.nav-search form{
+    width:100%;
+    margin:0 auto;
+}
+.nav-search form .glyphicon{
+    top:0!important;
+}
+.mini-navbar .nav-search{
+    display: none;
+}
+.nav-search form input{
+    height: 30px;
+    outline: none;
+    border-color:#ddd!important;
+    border-radius: 3px!important;
+    padding-right: 30px;
+}
+.nav-search form a.input-group-add{
+    border-left:0 none;
+    background: #fff!important;
+    position: absolute;
+    display: block;
+    width:30px;
+    height: 30px;
+    right: 0;
+    top:0;
+    border-radius: 3px;
+    color: #2F313D;
+    z-index: 99;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+.nav-search .input-group{
+    position: relative;
+}
+
+.nav-search .form-control:focus, .single-line:focus{
+    border-color:#ddd!important;
+
+}
+.nav-header{
+    background: #2F313D;
+}
+.J_mainContent{padding: 20px;background: #fff}
+.J_tabClose{background: #fff !important;}
+.J_tabClose:hover{
+    background: #27BDFF !important;
+    color: #fff !important;
+}

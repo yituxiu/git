@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>common</title>
+		<script type="text/javascript">			
+			window.onload=function(){
+			var D_input=document.getElementsByTagName("input");
+			var D_div=document.getElementsByTagName("div");
+			for(var i=0;i<D_input.length;i++){
+				D_input[i].index=i;				
+				D_input[i].onclick=function (){
+				for(var i=0;i<D_input.length;i++){
+					D_input[i].className="";
+					D_div[i].style.display="none";
+				}
+				this.className="active";
+				D_div[this.index].style.display="block";
+				}				
+				}				
+			}		
+		</script>
+		<style type="text/css">
+		div{ width: 200px; height: 200px; background: red; display: none;}	
+		.active{ background: red;}
+	
+		</style>
+	</head>
+	<body>
+			<input class="active" type="button" value="教育" />
+			<input type="button" value="新闻" />
+			<input type="button" value="娱乐"/>
+			<input type="button" value="军事"/>
+			<div style="display: block;">111</div>
+			<div>222</div>
+			<div>333</div>
+			<div>444</div>
+	
+	</body>
+</html>
